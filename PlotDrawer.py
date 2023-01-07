@@ -1,3 +1,4 @@
+import sys
 try:
     import matplotlib as mpl
     import matplotlib.pyplot as plt
@@ -6,6 +7,7 @@ except ImportError:
     print('''Please install matplotlib with:''' + '''
     ''' + '''pip install matplotlib''' + '''
     ''')
+    sys.exit()
 xvalv = input("Enter number of x to display (min:5, max:7): ")
 yvalv = input("Enter number of values to display (min:5, max:7): ")
 print("Make sure that both a's are in 0 for speed log.")
